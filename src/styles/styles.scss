@@ -1,0 +1,40 @@
+:root{
+  --primary:#2c3e50;
+  --active: #42b983;
+}
+
+body{
+
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primary);
+}
+#nav {
+  padding: 2rem 2rem 2rem 0;
+  a {
+    font-weight: bold;
+    color: var(--primary);
+    &.router-link-exact-active {
+      color: var(--active);
+    }
+  }
+}
+
+h3 {
+  margin: 2.5rem 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+a {
+  color: var(--active);
+}
