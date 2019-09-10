@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <nav id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <main>
-      <router-view/>
+    <main id="main-container">
+     <NaviDesktop/>
+      <main>
+        <router-view/>
+      </main>
     </main>
   </div>
 </template>
@@ -13,3 +12,9 @@
 <style lang="scss">
   @import 'styles/styles';
 </style>
+<script>
+import NaviDesktop from './components/navigation/NaviDesktop'
+export default {
+  components: { NaviDesktop }
+}
+</script>
